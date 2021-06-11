@@ -1,0 +1,237 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+/* /* ol, ul {
+	list-style: none; 
+} */
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+div.main 
+    {
+    background:beige; 
+    text-align: justify;
+    font-size: large; 
+    line-height: 1.5;
+    width:1200px;  
+    margin: 0 auto 0 auto; 
+    border-radius: 20px; 
+    padding: 15px 30px; 
+    box-sizing: border-box; 
+    border: solid 2px gray; 
+    font-family: 'Cambria'; 
+    box-shadow: 0 0 10px grey;
+    }
+div.scroll 
+    {
+    overflow: auto scroll; 
+    height: 500px; 
+    box-shadow: 0 0 3px gray;
+    padding: 15px 30px;
+    }
+h1, h2 
+    {
+    background-color: peru;
+    font-weight: bold ;
+    font-size: 28px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 20px; 
+    font-family: 'Georgia'; 
+    box-shadow: 0 0 10px brown;}
+h2 {
+    background-color: palegoldenrod; 
+    font-family: 'Book Antiqua';
+    font-weight: normal;
+   }
+p 
+    {
+    font-family: 'Century Gothic'
+    }
+span {
+    text-decoration: underline;
+    }
+.sapr { 
+    font-weight: bold; 
+    font-family: 'Book Antiqua'
+     }
+
+p+p+p+p {
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Book Antiqua';
+    color: maroon;
+    box-shadow: 0 0 3px gray;
+    }
+
+.img_aling {
+    text-align: center;
+}
+
+.menu {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+    
+}
+
+.menu-block {
+    position: relative;
+}
+
+div .menu-block ul{
+	text-align: center;
+	font-size: 0;
+}
+
+ul li{
+	/* display: inline-block;
+	background: rgb(240, 177, 61); */
+	font-size: 18px;
+    /* position: relative;
+    width: 150px; */
+}
+
+div .menu-block ul li{
+	display: inline-block;
+	background: rgb(61, 240, 76);
+	font-size: 18px;
+    position: relative;
+    width: 150px;
+}
+
+div .menu-block ul li a{
+	text-decoration: none;
+	color: black;
+	text-transform: uppercase;
+	padding-top: 10px;
+    padding-bottom: 10px;
+	display: block;
+    text-align: center;
+}
+
+div .menu-block ul li a:hover {
+    background-color: rgb(211, 150, 58);
+    /* font-size: larger; */
+    font-style: inherit;
+    font-weight: bolder;
+    background: lightcoral;
+}
+
+div .menu-block li{
+    border: 1px solid rgb(16, 160, 47);
+}
+
+.in-menu-block {
+    position: absolute;
+    display: none;
+}
+.float-menu {
+    position: absolute;
+    top:  100%;
+    left:  0;
+    display: none;
+}
+
+li:hover .in-menu-block  {
+    display: block;
+    top:  100%;
+    left:  0%;
+}
+
+li ul  :hover  .float-menu   {
+    display: block;
+    top:  0;
+    left:  100%;
+}
+
+.soc-menu {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-align: center;
+	font-size: 0;
+}
+
+.soc-menu li {
+display: inline-block;
+font-size: 20px;
+}
+
+.soc-menu li a{
+	width: 64px;
+	height: 64px;
+	display: block;
+	/* outline: 2px solid lime; */
+	background: url('../img/css_sprites.png');
+	/* transition: all 1s ease; */
+}
+	
+.soc-menu li a{
+	background-position:  -10px -287px;
+}	
+
+.soc-menu li+li a{
+		background-position:  -10px -539px;
+	}
+
+.soc-menu li+li+li a{
+		background-position:  -10px -623px;
+	}
+
+.soc-menu li+li+li+li a{
+		background-position:  -10px -791px;
+	}	
+
+.soc-menu li:hover a{
+	background-position:  -10px -368px;
+}	
+
+.soc-menu li+li:hover a{
+		background-position:  -10px -452px;
+	}
+
+.soc-menu li+li+li:hover a{
+		background-position: -10px -708px;
+	}
+
+.soc-menu li+li+li+li:hover a {
+		background-position: -10px -872px;
+	}	

@@ -1,0 +1,267 @@
+@import url('');
+/*css reset*/
+			html, body, div, span, applet, object, iframe,
+			h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+			a, abbr, acronym, address, big, cite, code,
+			del, dfn, em, img, ins, kbd, q, s, samp,
+			small, strike, strong, sub, sup, tt, var,
+			b, u, i, center,
+			dl, dt, dd, ol, ul, li,
+			fieldset, form, label, legend,
+			table, caption, tbody, tfoot, thead, tr, th, td,
+			article, aside, canvas, details, embed, 
+			figure, figcaption, footer, header, hgroup, 
+			menu, nav, output, ruby, section, summary,
+			time, mark, audio, video {
+				margin: 0;
+				padding: 0;
+				border: 0;
+				font-size: 100%;
+				font: inherit;
+				vertical-align: baseline;
+			}
+			/* HTML5 display-role reset for older browsers */
+			article, aside, details, figcaption, figure, 
+			footer, header, hgroup, menu, nav, section {
+				display: block;
+			}
+			body {
+				line-height: 1;
+			}
+			ol, ul {
+				list-style: none;
+			}
+			blockquote, q {
+				quotes: none;
+			}
+			blockquote:before, blockquote:after,
+			q:before, q:after {
+				content: '';
+				content: none;
+			}
+			table {
+				border-collapse: collapse;
+				border-spacing: 0;
+			}
+
+
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1100px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+div .menu {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+}
+
+div .menu-block {
+    position: relative;
+	z-index: 20;
+}
+
+ul{
+	text-align: center;
+	font-size: 0;
+}
+
+div .menu-block ul li{
+	display: inline-block;
+	background: rgb(225, 92, 243);
+	box-shadow: 0 0 10px brown;
+	border-radius: 10px;
+	font-size: 18px;
+	position: relative;
+	width: 150px;
+	padding: 0 20px 0 0 ;
+}
+
+ul li a{
+	text-decoration: none;
+	color: rgb(0, 66, 128);
+	text-transform: uppercase;
+	padding: 15px 25px;
+	display: block;
+	position: relative;
+}
+
+.img {
+	position: relative;
+}
+
+.text {
+	color: blue;
+	font-size: larger;
+	font-weight: bold;
+	position: absolute;
+	z-index: 10;
+	top: 50%;
+	left: 30%;
+}
+
+.white {
+	position: absolute;
+	background-color: rgba(255, 255, 255, 0.699);
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+div .menu-block li:hover {
+	background-color: aqua;
+}
+
+.white:hover {
+	background-color: rgba(150, 179, 149, 0.507);
+}
+
+.text+.white:hover {
+	color: brown;
+	font-size: larger;
+	font-weight: bold;
+}
+
+
+
+div .in-menu-block {
+    position: absolute;
+
+    display: none;
+}
+ul .float-menu {
+    position: absolute;
+    top:  100%;
+    left:  0;
+    display: none;
+}
+
+li:hover .in-menu-block  {
+    display: block;
+    top:  100%;
+    left:  0%;
+} 
+
+li ul  :hover  .float-menu   {
+    display: block;
+    top:  0;
+    left:  100%;
+}
+
+.soc-menu {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-align: right;
+	font-size: 0;
+}
+
+.soc-menu li {
+display: inline-block;
+font-size: 20px;
+}
+
+.soc-menu li a{
+	width: 13px;
+	height: 28px;
+	display: block;
+	/* outline: 2px solid lime; */
+	background: url('../../img/css_sprites.png');
+	/* transition: all 1s ease; */
+}
+	
+.soc-menu li a{
+	background-position:  -10px -287px;
+}	
+
+.soc-menu li+li a{
+		background-position:  -10px -539px;
+	}
+
+.soc-menu li+li+li a{
+		background-position:  -10px -623px;
+	}
+
+.soc-menu li+li+li+li a{
+		background-position:  -10px -791px;
+	}	
+
+.soc-menu li:hover a{
+	background-position:  -10px -368px;
+}	
+
+.soc-menu li+li:hover a{
+		background-position:  -10px -452px;
+	}
+
+.soc-menu li+li+li:hover a{
+		background-position: -10px -708px;
+	}
+
+.soc-menu li+li+li+li:hover a {
+		background-position: -10px -872px;
+	}	
+
+li .block-arrow {
+	display: inline-block;
+}
+
+.icon1::before {
+	content: "";
+	width: 24px;
+	height: 30px;
+	background: url('../../img/css_sprites.png');
+	position: absolute;
+	top: 8px;
+	right: 0px;
+	transition: all 1s ease;
+	padding: 0px 20px 0px 0px;
+	background-position:  -10px -54px;
+}
+
+.icon2::before {
+	content: "";
+	width: 24px;
+	height: 30px;
+	background: url('../../img/css_sprites.png');
+	position: absolute;
+	top: 8px;
+	right: -5px;
+	transition: all 1s ease;
+	padding: 0px 20px 0px 0px;
+	background-position:  -10px -10px;
+}
+
+.after::after {
+		content: "";
+		width: 24px;
+		height: 30px;
+		background: url('../../img/css_sprites.png');
+		position: absolute;
+		top: 8px;
+		right: 0px;
+		transition: all 1s ease;
+		padding: 0px 20px 0px 0px;
+		background-position:  -10px -100px;
+	}
+
+.after1::after {
+		content: "";
+		width: 24px;
+		height: 30px;
+		background: url('../../img/css_sprites.png');
+		position: absolute;
+		top: 8px;
+		right: 0px;
+		transition: all 1s ease;
+		padding: 0px 20px 0px 0px;
+		background-position:  -10px -192px;
+	}
+
+

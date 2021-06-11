@@ -1,0 +1,245 @@
+html, body, div, span, applet, object, iframe,
+			h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+			a, abbr, acronym, address, big, cite, code,
+			del, dfn, em, img, ins, kbd, q, s, samp,
+			small, strike, strong, sub, sup, tt, var,
+			b, u, i, center,
+			dl, dt, dd, ol, ul, li,
+			fieldset, form, label, legend,
+			table, caption, tbody, tfoot, thead, tr, th, td,
+			article, aside, canvas, details, embed, 
+			figure, figcaption, footer, header, hgroup, 
+			menu, nav, output, ruby, section, summary,
+			time, mark, audio, video {
+				margin: 0;
+				padding: 0;
+				border: 0;
+				font-size: 100%;
+				font: inherit;
+				vertical-align: baseline;
+			}
+			/* HTML5 display-role reset for older browsers */
+			article, aside, details, figcaption, figure, 
+			footer, header, hgroup, menu, nav, section {
+				display: block;
+			}
+			body {
+				line-height: 1;
+			}
+			ol, ul {
+				list-style: none;
+			}
+			blockquote, q {
+				quotes: none;
+			}
+			blockquote:before, blockquote:after,
+			q:before, q:after {
+				content: '';
+				content: none;
+			}
+			table {
+				border-collapse: collapse;
+				border-spacing: 0;
+			}
+
+div+div{outline: 1px solid rgb(128, 5, 5);
+}
+
+.wrapper {
+width: 1200px;
+margin: 0 auto;
+
+
+}
+
+h1 {text-align: center;
+    font-size: 25px;
+    background-color:yellowgreen;
+	padding: 5px;
+}
+
+.in_firstBlock {
+    float: left;
+	width: 400px;
+    padding: 5px 0px;
+	background-color: salmon;
+}
+
+.crl {
+	clear: left;
+}
+
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: block;
+}
+
+.in_secondBlock_left {
+     float: left;
+	 width: 800px;
+     background-color: rgb(250, 236, 114);
+}
+
+.in_in_secondBlock_left {
+   font-size: 21px;
+}
+
+.in_secondBlock {
+	float: left;
+	width: 400px;
+	background-color: rgb(250, 236, 114);
+}
+
+.thirdBlock {
+	background-color: rgb(114, 250, 143);
+}
+
+.in_thirdBlock_left {
+	float: left;
+	width: 600px;
+    background-color: rgb(114, 250, 143);
+	padding: 50px 0px;
+}
+
+.in_thirdBlock {
+	float: left;
+	width: 600px;
+    padding: 5px 0px;
+}
+
+.in_in_thBlock {
+	float: left;
+	width: 300px;
+}
+
+.in_flourBlock {
+	float: left;
+	width: 600px;
+	background-color: rgb(226, 43, 43);
+}
+
+.in_in_flBlock {
+	float: left;
+	width: 300px;
+}
+
+.in_in_flBl {
+	float: left;
+}
+
+.in_in_flBl_1 {
+	float: left;
+	width: 150px;
+}
+
+.menu {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+}
+
+ul{
+	text-align: center;
+	font-size: 0;
+}
+
+div .menu-block ul li{
+	display: inline-block;
+	background: rgb(240, 177, 61);
+	box-shadow: 0 0 10px brown;
+	border-radius: 5px;
+	font-size: 18px;
+	position: relative;
+	width: 150px;
+}
+
+ul li a{
+	text-decoration: none;
+	color: rgb(0, 66, 128);
+	text-transform: uppercase;
+	padding: 15px 25px;
+	display: block;
+}
+
+div .in-menu-block {
+    position: absolute;
+
+    display: none;
+}
+ul .float-menu {
+    position: absolute;
+    top:  100%;
+    left:  0;
+    display: none;
+}
+
+li:hover {
+   background: crimson;
+}
+
+li:hover .in-menu-block  {
+    display: block;
+	top:  100%;
+    left:  0%;
+}
+
+li ul  :hover  .float-menu   {
+    display: block;
+    top:  0;
+    left:  100%;
+}
+
+.soc-menu {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-align: right;
+	font-size: 0;
+}
+
+.soc-menu li {
+display: inline-block;
+font-size: 20px;
+}
+
+.soc-menu li a{
+	width: 13px;
+	height: 28px;
+	display: block;
+	/* outline: 2px solid lime; */
+	background: url('../../img/css_sprites.png');
+	/* transition: all 1s ease; */
+}
+	
+.soc-menu li a{
+	background-position:  -10px -287px;
+}	
+
+.soc-menu li+li a{
+		background-position:  -10px -539px;
+	}
+
+.soc-menu li+li+li a{
+		background-position:  -10px -623px;
+	}
+
+.soc-menu li+li+li+li a{
+		background-position:  -10px -791px;
+	}	
+
+.soc-menu li:hover a{
+	background-position:  -10px -368px;
+}	
+
+.soc-menu li+li:hover a{
+		background-position:  -10px -452px;
+	}
+
+.soc-menu li+li+li:hover a{
+		background-position: -10px -708px;
+	}
+
+.soc-menu li+li+li+li:hover a {
+		background-position: -10px -872px;
+	}	
